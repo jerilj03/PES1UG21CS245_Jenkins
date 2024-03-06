@@ -5,12 +5,12 @@ pipeline {
             steps {
                 sh 'echo "--> in build"'
                 build 'PES1UG21CS245-1'
-                sh 'g++ main2.cpp -o output'
+                sh 'g++ main.cpp -o output'
             }
         }
         stage('Test') { 
             steps {
-                sh 'echo "--> in test"'
+            sh 'echo "--> in test"'
                 sh './output'
 
             }
