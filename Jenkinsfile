@@ -10,14 +10,14 @@ pipeline {
         }
         stage('Test') { 
             steps {
-            sh 'echo "--> in test"'
+                sh 'echo "--> in test"'
                 sh './output'
 
             }
         }
         stage('Deploy') { 
             steps {
-                sh 'echo "--> in deployment"' 
+                h 'echo "--> in deployment"' 
                 sh 'echo "--> deployed"'
             }
         }
